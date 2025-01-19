@@ -17,19 +17,16 @@
 
     $auth = $_SESSION['auth'] ?? null;
 
-    if(!$auth) { ?>
-        <form action="index.php" method="post">
-            <input name="login" type="text" placeholder="Логин">
-            <input name="password" type="password" placeholder="Пароль">
-            <input name="submit" type="submit" value="Войти">
-        </form>
+    if(!$auth) {  
+        header("Location:/login.php");}
+    ?>  
 
     </main>
     <footer>
         <div class="SPA">FIO <span>&copy;&nbsp;SPA</span></div>
     </footer>
 </body>
-<?php }
+<?php 
 
 // контент для администратора
 
