@@ -1,4 +1,4 @@
-<?php
+ <?php
 
 $username = $_POST['login'] ?? null;
 $password = $_POST['password'] ?? null;
@@ -38,4 +38,4 @@ if ($auth) {
 // контент для администратора
     <a href="index.php">Вернуться на главную</a>
 
-<?php }
+<?php } 
